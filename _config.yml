@@ -22,9 +22,9 @@ repository               : "rfbryn/rfbryn.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Raihan Febryanto"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  name             : #"Raihan Febryanto"
+  pronouns         : "he/him" 
+  bio              : #"Short biography for the left-hand sidebar"
   location         : "Sendai, Miyagi, Japan"
   employer         : "Tohoku University"
   uri              : # URL
