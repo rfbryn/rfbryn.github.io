@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /research/
 title: "Raihan Febryanto"
 author_profile: true
 redirect_from: 
