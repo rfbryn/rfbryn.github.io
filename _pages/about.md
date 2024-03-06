@@ -1,10 +1,8 @@
 ---
-permalink: /
-title: "Raihan Febryanto"
+layout: home
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+header:
+  overlay_color: "#666"
 ---
 
 Hi!👋
