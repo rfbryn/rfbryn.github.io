@@ -1,6 +1,7 @@
 ---
-layout: home
+permalink: /
 author_profile: true
+title: "Raihan Febryanto"
 header:
   overlay_color: "#666"
 ---
