@@ -263,6 +263,18 @@ html, body {
 }
 
 .author__avatar img {
+  border-radius: 50% !important;
+  border: none !important;
+  -webkit-mask-image: radial-gradient(circle at center, black 65%, transparent 100%);
+  mask-image: radial-gradient(circle at center, black 65%, transparent 100%);
+  transition: none;
+}
+
+.author__avatar img:hover {
+  transform: none;
+}
+
+.author__avatar img {
   max-width: 160px;
   width: 160px;
 }
