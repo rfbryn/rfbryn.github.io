@@ -28,12 +28,14 @@ Current affiliation: [Brooks Lab at UMich](https://brooks.chem.lsa.umich.edu/)
 ## Publications
 
 ### Published
-*  Yamashita, I., Ikeda, K., **Husna, S. M. A.**, Kamagata, K., Nakao, H., & Nakano, M. (2025). *Regulating surface properties of designed phase-separating peptide droplets for improved dispersibility*. Journal of Colloid and Interface Science, 700, 138609. [DOI](https://doi.org/10.1016/j.jcis.2025.138609), [PDF](https://drive.google.com/file/d/14uPsToWHnjElukK149WlkEkt8aVH13pd/view?usp=sharing)
+*  Kaneda, N., Suzuki, L., Endo, S., **Husna, S. M. A.**, Ishikawa, S., Takahashi, H., Oikawa, H., Itoh, Y., & Takahashi, S. (2025). *A Single Dimer of the SARS-CoV-2 N Protein Can Associate with Multiple Fragments of Single-Stranded and Stem-Loop RNA: A Single-Molecule FRET and FCS Investigation*. [doi](https://doi.org/10.1021/acsomega.6c01513)
+
+*  Yamashita, I., Ikeda, K., **Husna, S. M. A.**, Kamagata, K., Nakao, H., & Nakano, M. (2025). *Regulating surface properties of designed phase-separating peptide droplets for improved dispersibility*. Journal of Colloid and Interface Science, 700, 138609. [doi](https://doi.org/10.1016/j.jcis.2025.138609), [pdf](https://drive.google.com/file/d/14uPsToWHnjElukK149WlkEkt8aVH13pd/view?usp=sharing)
 
 ### Preprint / Submitted
-*  Kaneda, N., Suzuki, L., Endo, S., **Husna, S. M. A.**, Ishikawa, S., Takahashi, H., Oikawa, H., Itoh, Y., & Takahashi, S. (2025). *A single dimer of the SARS-CoV-2 N protein can associate with multiple fragments of single-stranded and stem-loop RNAs.* [bioRxiv](https://doi.org/10.1101/2025.01.23.634602)
 
-* Sumrall, E., **Husna, S. M. A.**, Halder, B., Ahnoud, A. & Walter, N. G. *Beyond Incidental Liquids: Illuminating Nanoscale Heterogeneity and Function in Biomolecular Condensates.* Submitted to COSB
+* Sumrall, E., **Husna, S. M. A.**, Halder, B., Ahnoud, A. & Walter, N. G. *Single-molecule microscopy of biomolecular
+condensates: From liquid droplets to heterogeneous networks.* Submitted to COSB (**Perspective**)
 
 
 ### In Prep
