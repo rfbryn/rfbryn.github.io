@@ -1,8 +1,8 @@
 ---
 layout: single
 permalink: /research/
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 author_profile: true
 title: "Research"
 ---
