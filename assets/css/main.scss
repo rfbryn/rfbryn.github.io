@@ -28,7 +28,7 @@ body {
 /* Glassmorphism Classes */
 .masthead {
   background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -39,8 +39,8 @@ body {
 
 .page__inner-wrap {
   background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: 16px;
   padding: 3rem;  /* Increase padding for broader look */
   margin-inline-end: 2rem; /* Creates a gap between the glass card and the TOC */
@@ -50,8 +50,8 @@ body {
 
 .sidebar .author__urls-wrapper {
   background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: 12px;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.9);
