@@ -2,9 +2,9 @@
 layout: single
 author_profile: true
 permalink: /about/
-toc: true
-toc_sticky: true
-title: "About Sam"
+toc: false
+toc_sticky: false
+title: "About Ryan"
 author_profile: true
 ---
 ### Education
