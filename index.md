@@ -17,18 +17,6 @@ Hi! I'm Ryan, a second-year PhD candidate Molecular Engineering at the Universit
 ## Recent News
 <div style="overflow-y: scroll; height: 400px; border: 0px; padding: 5px;">
     <ul style="list-style-type: disc; margin-left: 0; padding-left: 20px;">
-        <li style="margin-bottom: 8px;"><span class="record-date">Mar 2026</span> - 📝 Published in ACS Omega, <a href="https://pubs.acs.org/doi/10.1021/acsomega.6c01513">link</a>.</li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Feb 2026</span> - 🎤 I presented my poster at BPS 2026 in SF, <a href="https://www.cell.com/biophysj/abstract/S0006-3495(25)01911-3">abstract</a>.</li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Jan 2026</span> - 〽️ I started my Winter Rotation at the <a href="https://brooks.chem.lsa.umich.edu/">Brooks Lab</a></li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Sep-Dec 2025</span> - 〽️ I finished my (very fruitful) Fall Rotation at the <a href="https://sites.lsa.umich.edu/walter-lab/">Walter Lab</a>, 2 papers to be submitted!</li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Aug 2025</span> - 〽️ I started my PhD in Chemistry at UMich!</li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Aug 2025</span> - 📝 Published in Journal of Colloid and Interface Science, <a href="https://doi.org/10.1016/j.jcis.2025.138609">link</a>.</li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Sep 2025</span> - 🎓 I have graduated with an MSc. from Tohoku University!</li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Apr 2025</span> - 〽️ I have been accepted to the <a href="https://lsa.umich.edu/chem">Chemistry PhD program at the University of Michigan</a>, Go Blue!</li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Aug 2024</span> - 🎤 I attended and presented at <a href="https://bpwakate.net/summer2024/">the 64th Summer School for Young Biophysicists</a> in Sapporo, Japan.</li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Aug 2024</span> - 🎤 I received the Student and Early Career Researcher Poster Award at the 21st IUPAB and 62nd Annual Meeting of the Biophysical Society of Japan (<a href="https://www2.tagen.tohoku.ac.jp/lab/news_award/20240717/">See more.</a>)</li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Nov 2023</span> - 🎤 I received the Student Presentation Award at the 61st Annual Meeting of the Biophysical Society of Japan (<a href="https://www.biophys.jp/ann/ann01_13.html">See more.</a>)</li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Oct 2023</span> - 📚 I started my master studies under the IGPAS program at Tohoku University.</li>
-        <li style="margin-bottom: 8px;"><span class="record-date">Sep 2023</span> - 🎓 I have graduated with a BSc. from Tohoku University.</li>
+        <li style="margin-bottom: 8px;"><span class="record-date">Mar 2026</span> - 📝,.</li>
     </ul>
 </div>
