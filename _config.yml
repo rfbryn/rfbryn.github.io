@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "premium" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "premium"
 
 # Site Settings
 locale                   : "en-US"
@@ -119,6 +119,12 @@ author:
   location         : "Ann Arbor, MI"
   email            : samhusna@umich.edu
   links:
+    - label: "CV (2025/10)"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "https://drive.google.com/file/d/1fxNJ-uVO48AwEY-6A_DZQnF3gONyaKqS/view?usp=sharing"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=Ne4cszYAAAAJ&hl=en&authuser=1"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:samhusna@umich.edu"

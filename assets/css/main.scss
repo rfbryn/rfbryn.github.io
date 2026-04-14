@@ -5,5 +5,273 @@ search: false
 
 @charset "utf-8";
 
+/* Import Premium Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   Premium UI Overrides
+   ========================================================================== */
+
+body {
+  /* Subtle light marble mesh gradient background */
+  background: radial-gradient(circle at 10% 20%, rgba(220, 225, 230, 0.3), transparent 30%),
+              radial-gradient(circle at 90% 80%, rgba(220, 225, 230, 0.4), transparent 30%),
+              $background-color;
+  background-attachment: fixed;
+  color: $text-color;
+  font-family: $global-font-family;
+}
+
+/* Glassmorphism Classes */
+.masthead {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.masthead__menu-item a {
+  color: $text-color !important;
+}
+
+.page__inner-wrap {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 3rem;  /* Increase padding for broader look */
+  margin-inline-end: 2rem; /* Creates a gap between the glass card and the TOC */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.sidebar .author__urls-wrapper {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.04);
+}
+
+/* Robust override to perfectly place the TOC on all desktop screens and prevent overlap */
+@media (min-width: 1024px) {
+  .page {
+    /* Remove default padding since we manage layout via the inner wrap */
+    padding-inline-end: 0 !important;
+  }
+  .page__inner-wrap {
+    /* Shrink the glass pane to leave empty space for the TOC */
+    margin-inline-end: calc(200px + 4rem) !important;
+  }
+  .sidebar__right {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important; /* Stretch track identically to glass box height */
+    /* backdrop-filter on inner-wrap traps absolute positioning! 
+       Push the TOC out of the glass pane into the margin space we created. */
+    right: calc(-200px - 4rem) !important;
+    margin-inline-end: 0 !important;
+    width: 200px !important;
+    z-index: 10;
+  }
+  .sidebar__right nav.toc {
+    position: sticky !important;
+    top: 2rem !important; /* Enable native stickiness to float through the track height */
+  }
+}
+
+@media (min-width: 1280px) {
+  .page__inner-wrap {
+    margin-inline-end: calc(220px + 4rem) !important;
+  }
+  .sidebar__right {
+    right: calc(-220px - 4rem) !important;
+    width: 220px !important;
+  }
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6, .site-title {
+  font-family: $header-font-family;
+  font-weight: 700;
+  color: #1f2328;
+}
+
+.site-title, .page__title {
+  color: #1f2328;
+  margin-bottom: 1rem;
+  text-shadow: none !important;
+}
+
+/* Fix Hero Overlay glow and styling */
+.page__hero--overlay {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.page__hero--overlay .page__title,
+.page__hero--overlay .page__hero-caption {
+  text-shadow: none !important;
+  color: #1f2328 !important;
+}
+
+/* Micro-animations */
+a {
+  transition: all 0.3s ease;
+}
+
+.masthead__menu-item a:hover {
+  color: #cda870 !important;
+}
+
+.archive__item {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+  border-radius: 12px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid transparent;
+}
+
+.archive__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  color: #2b2b2b !important;
+  border: 1px solid #e0e0e0;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+}
+
+/* Smooth Image Loading */
+img {
+  border-radius: 8px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+html, body {
+  /* Make sure the solid marble canvas doesn't obscure negative z-index elements */
+  background: transparent !important;
+}
+
+/* --- Dynamic Bio-Condensates Background --- */
+.dynamic-bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2; /* Keeps it strictly behind the interactive DOM */
+  pointer-events: none;
+  overflow: hidden;
+  /* Migrate the marble styling to the extreme bottom layer so condensates float tightly on top of it */
+  background: radial-gradient(circle at 10% 20%, rgba(220, 225, 230, 0.3), transparent 30%),
+              radial-gradient(circle at 90% 80%, rgba(220, 225, 230, 0.4), transparent 30%),
+              #fdfdfd;
+}
+
+.blob-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: url('#goo');
+  /* Hardware accelerated jitter reduction */
+  transition: transform 0.1s ease-out;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #e6ebf0);
+  opacity: 0.85;
+}
+
+
+/* Ambient Small Condensates Configuration */
+.blob-1 { width: 120px; height: 120px; top: 10%; left: 10%; animation: float1 25s infinite alternate ease-in-out; }
+.blob-2 { width: 150px; height: 150px; top: 60%; left: 80%; animation: float2 30s infinite alternate ease-in-out; }
+.blob-3 { width: 220px; height: 220px; top: 40%; left: 40%; animation: float3 35s infinite alternate ease-in-out; }
+.blob-4 { width: 180px; height: 180px; top: 80%; left: 20%; animation: float4 28s infinite alternate ease-in-out; }
+.blob-5 { width: 100px; height: 100px; top: 20%; left: 70%; animation: float5 22s infinite alternate ease-in-out; }
+.blob-6 { width: 250px; height: 250px; top: -10%; left: 50%; animation: float6 38s infinite alternate ease-in-out; }
+.blob-7 { width: 130px; height: 130px; top: 30%; left: 10%; animation: float2 27s infinite alternate ease-in-out 4s; }
+.blob-8 { width: 160px; height: 160px; top: 70%; left: 50%; animation: float5 33s infinite alternate ease-in-out 2s; }
+.blob-9 { width: 200px; height: 200px; top: 15%; left: 85%; animation: float1 40s infinite alternate ease-in-out 6s; }
+.blob-10 { width: 110px; height: 110px; top: 50%; left: 20%; animation: float4 26s infinite alternate ease-in-out 1s; }
+.blob-11 { width: 240px; height: 240px; top: 85%; left: 70%; animation: float3 45s infinite alternate ease-in-out 8s; }
+.blob-12 { width: 170px; height: 170px; top: 5%; left: 40%; animation: float6 32s infinite alternate ease-in-out 5s; }
+.blob-13 { width: 140px; height: 140px; top: 65%; left: 10%; animation: float1 29s infinite alternate ease-in-out 3s; }
+.blob-14 { width: 190px; height: 190px; top: 35%; left: 80%; animation: float2 36s infinite alternate ease-in-out 7s; }
+.blob-15 { width: 210px; height: 210px; top: 90%; left: 40%; animation: float5 42s infinite alternate ease-in-out 4s; }
+
+/* Fluid Keyframes mapping sprawling movement coordinates */
+@keyframes float1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(30vw, 20vh) scale(1.2); }
+  100% { transform: translate(-10vw, 40vh) scale(0.9); }
+}
+@keyframes float2 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(-40vw, -30vh) scale(1.1); }
+  100% { transform: translate(10vw, -50vh) scale(1); }
+}
+@keyframes float3 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(20vw, -20vh) scale(0.85); }
+  100% { transform: translate(-30vw, 10vh) scale(1.15); }
+}
+@keyframes float4 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(-20vw, -40vh) scale(1.2); }
+  100% { transform: translate(40vw, 10vh) scale(0.9); }
+}
+@keyframes float5 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(10vw, 30vh) scale(0.9); }
+  100% { transform: translate(-20vw, 0) scale(1.25); }
+}
+@keyframes float6 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(-10vw, 50vh) scale(1.1); }
+  100% { transform: translate(30vw, 20vh) scale(0.8); }
+}
+/* Consistent Date Label styling */
+.record-date {
+  font-size: 0.8em;
+  color: #8c939b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Author Portrait Visualization Enhancement - Organic Feathered Edges */
+.author__avatar img {
+  border-radius: 50% !important;
+  border: none !important;
+  /* Create an organic, blurred edge that diffuses into the background */
+  -webkit-mask-image: radial-gradient(circle at center, black 65%, transparent 100%);
+  mask-image: radial-gradient(circle at center, black 65%, transparent 100%);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.author__avatar img:hover {
+  transform: scale(1.05);
+}

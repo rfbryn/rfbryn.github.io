@@ -13,19 +13,19 @@ title: "Research"
 
 <!-- Add RNA and protein interface -->
 
-<!-- ## Publications -->
-
-[Google Scholar](https://scholar.google.com/citations?user=Ne4cszYAAAAJ&hl=en&authuser=1), [ORCID](https://orcid.org/0009-0005-2383-6964)
+<div style="margin-bottom: 2rem;">
+  <a href="https://scholar.google.com/citations?user=Ne4cszYAAAAJ&hl=en&authuser=1" class="btn btn--primary" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+  <a href="https://orcid.org/0009-0005-2383-6964" class="btn btn--primary" target="_blank" style="margin-left: 10px;"><i class="fab fa-orcid"></i> ORCID</a>
+</div>
 
 ## Affiliations
 Current affiliation: [Brooks Lab at UMich](https://brooks.chem.lsa.umich.edu/)
 
-### Past Affiliations
-- (Sep-Dec 2025) [Walter Lab](https://sites.lsa.umich.edu/walter-lab/lab-members/) (Chemistry Rotation Student)
-- (2022-Aug 2025) [Takahashi Lab, Tohoku University](https://www2.tagen.tohoku.ac.jp/lab/takahashi-s/) (Chemistry UG/Masters Student)
+### Past affiliations
+- <span class="record-date">Sep-Dec 2025</span> - [Walter Lab](https://sites.lsa.umich.edu/walter-lab/lab-members/) (Chemistry Rotation Student)
+- <span class="record-date">2022 - Aug 2025</span> - [Takahashi Lab, Tohoku University](https://www2.tagen.tohoku.ac.jp/lab/takahashi-s/) (Chemistry UG/Masters Student)
 
 ## Publications
-\* _co-first author_
 
 ### Published
 *  Yamashita, I., Ikeda, K., **Husna, S. M. A.**, Kamagata, K., Nakao, H., & Nakano, M. (2025). *Regulating surface properties of designed phase-separating peptide droplets for improved dispersibility*. Journal of Colloid and Interface Science, 700, 138609. [DOI](https://doi.org/10.1016/j.jcis.2025.138609), [PDF](https://drive.google.com/file/d/14uPsToWHnjElukK149WlkEkt8aVH13pd/view?usp=sharing)
@@ -42,3 +42,5 @@ Current affiliation: [Brooks Lab at UMich](https://brooks.chem.lsa.umich.edu/)
 * Gao, G.\*, Sumrall, E. R.\*, **Husna, S.**, Li, X. & Walter, N. G. *Incidental hyperosmotic phase separation enables transient RNA-protein triage.*
 
 * Sano, Y., **Husna, S. M. A.**, & Takahashi, S. *Probing ultrafast protein and RNA dynamics with an efficient two-color fluorescence correlation spectroscopy method.*
+
+\* _co-first author_

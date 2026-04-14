@@ -1,0 +1,68 @@
+<!-- Dynamic Condensate Background -->
+<div class="dynamic-bg-container">
+  <div class="blob-wrapper" id="parallaxWrapper">
+    <!-- Ambient Small Condensates -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="blob blob-5"></div>
+    <div class="blob blob-6"></div>
+    <div class="blob blob-7"></div>
+    <div class="blob blob-8"></div>
+    <div class="blob blob-9"></div>
+    <div class="blob blob-10"></div>
+    <div class="blob blob-11"></div>
+    <div class="blob blob-12"></div>
+    <div class="blob blob-13"></div>
+    <div class="blob blob-14"></div>
+    <div class="blob blob-15"></div>
+  </div>
+</div>
+
+<!-- SVG Filter for the Gooey Effect -->
+<svg style="display:none;" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo" x="-50%" y="-50%" width="200%" height="200%">
+      <!-- High blur radius to soften edges before merging -->
+      <feGaussianBlur in="SourceGraphic" stdDeviation="25" result="blur" />
+      <!-- Color matrix tightens the alpha channel to create a hard edge out of the blur, achieving the 'water droplet / gooey' liquid merge -->
+      <feColorMatrix in="blur" mode="matrix" values="
+          1 0 0 0 0  
+          0 1 0 0 0  
+          0 0 1 0 0  
+          0 0 0 25 -10" result="goo" />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+    </filter>
+  </defs>
+</svg>
+
+<!-- Parallax Microscope Tracker -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById('parallaxWrapper');
+    let cx = window.innerWidth / 2;
+    let cy = window.innerHeight / 2;
+
+    window.addEventListener('resize', () => {
+      cx = window.innerWidth / 2;
+      cy = window.innerHeight / 2;
+    });
+    
+    // Only bind parallax if the user has a fine pointing device (mouse)
+    if (window.matchMedia("(pointer: fine)").matches) {
+      window.addEventListener('mousemove', (e) => {
+        // Calculate decimal ratio from screen center (-1 to 1)
+        const dx = (e.clientX - cx) / cx;
+        const dy = (e.clientY - cy) / cy;
+        
+        // Translate the entire slide opposite to the mouse by Max 40px
+        const moveX = dx * -40;
+        const moveY = dy * -40;
+        
+        // Apply smooth transition properties via CSS, relying on translate3d for GPU
+        wrapper.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+      });
+    }
+  });
+</script>
