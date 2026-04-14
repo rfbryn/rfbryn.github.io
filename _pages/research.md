@@ -6,43 +6,27 @@ toc_sticky: true
 author_profile: true
 title: "Research"
 ---
-<!-- ** Fused in Sarcoma (FUS) Condensates **
-![LLPS](/assets/images/research/research_LLPS_1.png) -->
 
-<!-- Add interface and fusion of condensates later -->
+## Single-Molecule Spectroscopy
 
-<!-- Add RNA and protein interface -->
+In my research, I use single-molecule fluorescence spectroscopy and microscopy, which is an experimental framework for interrogating biomolecular systems at the level of individual molecules rather than ensemble averages. In conventional bulk measurements, signals are averaged over large populations, often obscuring rare states, transient intermediates, and molecular heterogeneity. Single-molecule methods overcome this limitation by resolving fluorescence emission from discrete emitters in space and time, enabling direct measurement of stochastic behaviors, state-to-state transitions, and nanoscale structural organization. These approaches are especially powerful for studying systems that are inherently heterogeneous, dynamically evolving, or contain extremely low-abundance/rare molecular species, where population-averaged observables can fail to capture true underlying behaviors.
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 2rem;">
-  <a href="https://scholar.google.com/citations?user=Ne4cszYAAAAJ&hl=en&authuser=1" class="btn btn--primary" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-  <a href="https://orcid.org/0009-0005-2383-6964" class="btn btn--primary" target="_blank"><i class="fab fa-orcid"></i> ORCID</a>
-</div>
+The core of this field that I explore further is the use of highly sensitive optical instrumentation and quantitative analysis to extract molecular information from limited photon budgets. By considering various observables that I extract from fluorescence emission, I can turn fluorescence to function not only as a contrast mechanism, but as a multidimensional readout of molecular structure, behavior, and even its interaction with its local chemical environment.
 
-## Affiliations
-Current affiliation: [Brooks Lab at UMich](https://brooks.chem.lsa.umich.edu/)
+### Multiplexing Problem at the Single-Molecule Level
 
-### Past affiliations
-- <span class="record-date">Sep-Dec 2025</span> - [Walter Lab](https://sites.lsa.umich.edu/walter-lab/lab-members/) (Chemistry Rotation Student)
-- <span class="record-date">2022 - Aug 2025</span> - [Takahashi Lab, Tohoku University](https://www2.tagen.tohoku.ac.jp/lab/takahashi-s/) (Chemistry UG/Masters Student)
+A central challenge in single-molecule fluorescence is the multiplexing problem: how to distinguish many molecular species simultaneously when the measurement capacity of each individual fluorescent event is fundamentally limited. In principle, single-molecule methods offer exceptional sensitivity and precision, but in practice each detected molecule yields only a finite number of photons before bleaching, diffusing away, or transitioning into non-emissive states. This limits the number of labels that can be robustly separated using conventional dimensions such as color. 
+
+This challenge becomes even more severe in biological samples, where background fluorescence, optical cross-talk, labeling variability, and molecular crowding reduce the separability of signals across targets. Unlike bulk multiplexing strategies, which can often rely on strong ensemble-level signals, single-molecule approaches must operate under conditions where both signal and observation time are limited, and where classification errors arise directly from photon shot noise and stochastic photophysics. The multiplexing problem is therefore not simply a matter of adding more fluorophores, but of engineering ways to encode more distinguishable information into each molecular observation.
+
+### The Solution: Engineering DNA Nanostructures with Photophysical Encoding
+
+My solution to the multiplexing problem is the engineering of DNA nanostructures with photophysical encoding, in which programmable nucleic acid scaffolds are used to precisely organize fluorophores and thereby create molecular labels with distinguishable optical behaviors. DNA nanotechnology offers an exceptional degree of structural control at the nanometer scale, making it possible to position dyes with defined spacing, stoichiometry, and geometry. Rather than relying solely on fluorophore color as the basis for target identification, these nanostructures can be designed to encode information through photophysical parameters such as fluorescence resonance energy transfer (FRET), brightness, emission ratios, blinking behavior, or fluorescence lifetime. In this framework, the label itself becomes an engineered optical object whose measurable signal is determined not just by dye identity, but by nanoscale architecture.
+
+More broadly, photophysically encoded DNA nanostructures represent a convergence of molecular engineering, spectroscopy, and information-rich imaging. They offer a modular platform for designing labels that are not only detectable, but also computationally classifiable based on engineered optical signatures. In this sense, the goal is not simply to make brighter probes, but to construct probes that carry more distinguishable information per detected event. By leveraging the programmability of DNA, this approach opens a path toward scalable, high-dimensional single-molecule detection and imaging in systems where conventional color-based strategies are fundamentally insufficient.
 
 ## Publications
 
-### Published
-*  Kaneda, N., Suzuki, L., Endo, S., **Husna, S. M. A.**, Ishikawa, S., Takahashi, H., Oikawa, H., Itoh, Y., & Takahashi, S. (2025). *A Single Dimer of the SARS-CoV-2 N Protein Can Associate with Multiple Fragments of Single-Stranded and Stem-Loop RNA: A Single-Molecule FRET and FCS Investigation*. [doi](https://doi.org/10.1021/acsomega.6c01513)
-
-*  Yamashita, I., Ikeda, K., **Husna, S. M. A.**, Kamagata, K., Nakao, H., & Nakano, M. (2025). *Regulating surface properties of designed phase-separating peptide droplets for improved dispersibility*. Journal of Colloid and Interface Science, 700, 138609. [doi](https://doi.org/10.1016/j.jcis.2025.138609), [pdf](https://drive.google.com/file/d/14uPsToWHnjElukK149WlkEkt8aVH13pd/view?usp=sharing)
-
-### Preprint / Submitted
-
-* Sumrall, E., **Husna, S. M. A.**, Halder, B., Ahnoud, A. & Walter, N. G. *Single-molecule microscopy of biomolecular
-condensates: From liquid droplets to heterogeneous networks.* Submitted to COSB (**Perspective**)
-
-
-### In Prep
-*   Kamagata, K.\*, Hando, A.\*, **Husna, S. M. A.**\*, Kawahara, H., Nozawa, R-S., Ikeda, K., & Mano, E. *Complex and heterogeneous fusion dynamics of protein condensates by high-speed imaging and optical trapping.*
-
-* Gao, G.\*, Sumrall, E. R.\*, **Husna, S.**, Li, X. & Walter, N. G. *Incidental hyperosmotic phase separation enables transient RNA-protein triage.*
-
-* Sano, Y., **Husna, S. M. A.**, & Takahashi, S. *Probing ultrafast protein and RNA dynamics with an efficient two-color fluorescence correlation spectroscopy method.*
+Coming Soon
 
 \* _co-first author_
