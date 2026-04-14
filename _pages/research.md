@@ -13,9 +13,9 @@ title: "Research"
 
 <!-- Add RNA and protein interface -->
 
-<div style="margin-bottom: 2rem;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 2rem;">
   <a href="https://scholar.google.com/citations?user=Ne4cszYAAAAJ&hl=en&authuser=1" class="btn btn--primary" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-  <a href="https://orcid.org/0009-0005-2383-6964" class="btn btn--primary" target="_blank" style="margin-left: 10px;"><i class="fab fa-orcid"></i> ORCID</a>
+  <a href="https://orcid.org/0009-0005-2383-6964" class="btn btn--primary" target="_blank"><i class="fab fa-orcid"></i> ORCID</a>
 </div>
 
 ## Affiliations

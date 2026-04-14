@@ -10,10 +10,10 @@ toc_sticky: true
 Sam is a Chemistry PhD student with interests in  biomolecular condensates and single-molecule imaging/tracking.
 He was born and raised in Jakarta, Indonesia. He then moved to Japan to pursue undergraduate and master's studies (Tohoku University) and then the United States for PhD (University of Michigan).
 
-<div style="margin-top: 1.5rem; margin-bottom: 2rem;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.5rem; margin-bottom: 2rem;">
   <a href="https://drive.google.com/file/d/1fxNJ-uVO48AwEY-6A_DZQnF3gONyaKqS/view?usp=sharing" class="btn btn--primary" target="_blank"><i class="fas fa-file-pdf"></i> CV (2025/10)</a>
-  <a href="https://scholar.google.com/citations?user=Ne4cszYAAAAJ&hl=en&authuser=1" class="btn btn--primary" target="_blank" style="margin-left: 10px;"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-  <a href="https://orcid.org/0009-0005-2383-6964" class="btn btn--primary" target="_blank" style="margin-left: 10px;"><i class="fab fa-orcid"></i> ORCID</a>
+  <a href="https://scholar.google.com/citations?user=Ne4cszYAAAAJ&hl=en&authuser=1" class="btn btn--primary" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+  <a href="https://orcid.org/0009-0005-2383-6964" class="btn btn--primary" target="_blank"><i class="fab fa-orcid"></i> ORCID</a>
 </div>
 
 ## Recent News
