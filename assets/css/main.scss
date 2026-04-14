@@ -181,8 +181,8 @@ html, body {
   pointer-events: none;
   overflow: hidden;
   /* Migrate the marble styling to the extreme bottom layer so condensates float tightly on top of it */
-  background: radial-gradient(circle at 10% 20%, rgba(220, 225, 230, 0.3), transparent 30%),
-              radial-gradient(circle at 90% 80%, rgba(220, 225, 230, 0.4), transparent 30%),
+  background: radial-gradient(circle at 10% 20%, rgba(220, 225, 230, 0.3), transparent 60%),
+              radial-gradient(circle at 90% 80%, rgba(220, 225, 230, 0.4), transparent 60%),
               #fdfdfd;
 }
 
