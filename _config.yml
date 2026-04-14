@@ -17,14 +17,14 @@ minimal_mistakes_skin    : "premium" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Sam Husna"
+title                    : "Ryan Febryanto"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Sam Husna"
-description              : "Sam's Portofolio Site"
-url                      : "samhusna.com"
+name                     : "Ryan Febryanto"
+description              : "Ryan's Personal Website"
+url                      : "rfbryn.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : meraculin/meraculin.github.io
+repository               : rfbryn/rfbryn.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -113,27 +113,27 @@ analytics:
 
 # Site Author
 author:
-  name             : "Sam Husna"
+  name             : "Ryan Febryanto"
   avatar           : "/assets/images/author_image.jpg" # path of author image, e.g. "/assets/images/avatar.jpg"
-  bio              : "Chemistry PhD student"
-  location         : "Ann Arbor, MI"
-  email            : samhusna@umich.edu
+  bio              : "Molecular Engineering PhD candidate"
+  location         : "Chicago, IL"
+  email            : rfebryanto@uchicago.edu
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:samhusna@umich.edu"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/sam-husna/"
+      url: "https://www.linkedin.com/in/rfbryn/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/samm_husna"
+     # url: "https://twitter.com/samm_husna"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/meraculin"
+      url: "https://github.com/rfbryn"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -143,13 +143,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/samm_husna"
+    #  url: "https://twitter.com/samm_husna"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/meraculin"
+      url: "https://github.com/rfbryn"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
