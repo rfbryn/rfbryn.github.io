@@ -8,8 +8,8 @@ title: "About Sam"
 author_profile: true
 ---
 ### Education
-*  <span class="record-date">2025 - Present</span> - <img src="/assets/images/about/umich_logo.svg" style="width: 1.2rem; height: 1.2rem; object-fit: contain; vertical-align: text-bottom; margin-right: 4px;">University of Michigan (PhD in Chemistry)
-* <span class="record-date">2019 - 2025</span> - <img src="/assets/images/about/tohoku_logo.svg" style="width: 1.2rem; height: 1.2rem; object-fit: contain; vertical-align: text-bottom; margin-right: 4px;">Tohoku University (BS and MS in Chemistry)
+*  <span class="record-date">2025 - Present</span> - <img src="/assets/images/about/umich_logo.svg" style="width: 1.2rem; height: 1.2rem; object-fit: contain; border-radius: 0; vertical-align: text-bottom; margin-right: 4px;">University of Michigan (PhD in Chemistry)
+* <span class="record-date">2019 - 2025</span> - <img src="/assets/images/about/tohoku_logo.svg" style="width: 1.2rem; height: 1.2rem; object-fit: contain; border-radius: 0; vertical-align: text-bottom; margin-right: 4px;">Tohoku University (BS and MS in Chemistry)
 
 ### Honors and Awards
 * <span class="record-date">Jun 2024</span> - Early Career Researcher Poster Award. The 21st IUPAB and 62nd Annual Meeting of the Biophysical Society of Japan. Kyoto. [See more.](https://www2.tagen.tohoku.ac.jp/lab/news_award/20240717/)
