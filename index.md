@@ -2,7 +2,7 @@
 layout: single
 author_profile: true
 toc: false
-toc_sticky: true
+toc_sticky: false
 
 
 ---
