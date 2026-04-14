@@ -192,36 +192,49 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  filter: none; /* remove gooey merging */
+  filter: none;
   transition: transform 0.1s ease-out;
 }
 
 .blob {
   position: absolute;
   border-radius: 0;
+  opacity: 0.95;
+}
+
+.blob::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.92;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Cpath d='M50 10 L18 76 L82 76 Z' stroke='%23071426' stroke-width='3.5' stroke-linejoin='round'/%3E%3Cpath d='M50 10 L50 52' stroke='%23071426' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M18 76 L50 52 L82 76' stroke='%23071426' stroke-width='3.5' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E");
+  animation: spinTetra 18s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes spinTetra {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 /* Ambient Small Condensates Configuration */
-.blob-1 { width: 120px; height: 120px; top: 10%; left: 10%; animation: float1 25s infinite alternate ease-in-out; }
-.blob-2 { width: 150px; height: 150px; top: 60%; left: 80%; animation: float2 30s infinite alternate ease-in-out; }
-.blob-3 { width: 220px; height: 220px; top: 40%; left: 40%; animation: float3 35s infinite alternate ease-in-out; }
-.blob-4 { width: 180px; height: 180px; top: 80%; left: 20%; animation: float4 28s infinite alternate ease-in-out; }
-.blob-5 { width: 100px; height: 100px; top: 20%; left: 70%; animation: float5 22s infinite alternate ease-in-out; }
-.blob-6 { width: 250px; height: 250px; top: -10%; left: 50%; animation: float6 38s infinite alternate ease-in-out; }
-.blob-7 { width: 130px; height: 130px; top: 30%; left: 10%; animation: float2 27s infinite alternate ease-in-out 4s; }
-.blob-8 { width: 160px; height: 160px; top: 70%; left: 50%; animation: float5 33s infinite alternate ease-in-out 2s; }
-.blob-9 { width: 200px; height: 200px; top: 15%; left: 85%; animation: float1 40s infinite alternate ease-in-out 6s; }
-.blob-10 { width: 110px; height: 110px; top: 50%; left: 20%; animation: float4 26s infinite alternate ease-in-out 1s; }
-.blob-11 { width: 240px; height: 240px; top: 85%; left: 70%; animation: float3 45s infinite alternate ease-in-out 8s; }
-.blob-12 { width: 170px; height: 170px; top: 5%; left: 40%; animation: float6 32s infinite alternate ease-in-out 5s; }
-.blob-13 { width: 140px; height: 140px; top: 65%; left: 10%; animation: float1 29s infinite alternate ease-in-out 3s; }
-.blob-14 { width: 190px; height: 190px; top: 35%; left: 80%; animation: float2 36s infinite alternate ease-in-out 7s; }
-.blob-15 { width: 210px; height: 210px; top: 90%; left: 40%; animation: float5 42s infinite alternate ease-in-out 4s; }
+.blob-1::before  { animation-duration: 14s; animation-direction: normal; }
+.blob-2::before  { animation-duration: 22s; animation-direction: reverse; }
+.blob-3::before  { animation-duration: 17s; animation-direction: normal; }
+.blob-4::before  { animation-duration: 26s; animation-direction: reverse; }
+.blob-5::before  { animation-duration: 19s; animation-direction: normal; }
+.blob-6::before  { animation-duration: 30s; animation-direction: reverse; }
+.blob-7::before  { animation-duration: 16s; animation-direction: normal; }
+.blob-8::before  { animation-duration: 24s; animation-direction: reverse; }
+.blob-9::before  { animation-duration: 20s; animation-direction: normal; }
+.blob-10::before { animation-duration: 28s; animation-direction: reverse; }
+.blob-11::before { animation-duration: 18s; animation-direction: normal; }
+.blob-12::before { animation-duration: 32s; animation-direction: reverse; }
+.blob-13::before { animation-duration: 21s; animation-direction: normal; }
+.blob-14::before { animation-duration: 27s; animation-direction: reverse; }
+.blob-15::before { animation-duration: 23s; animation-direction: normal; }
 
 /* Fluid Keyframes mapping sprawling movement coordinates */
 @keyframes float1 {
