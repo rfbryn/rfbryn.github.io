@@ -194,83 +194,70 @@ html, body {
   height: 100%;
   filter: none;
   transition: transform 0.1s ease-out;
-  perspective: 800px;
 }
 
 .blob {
   position: absolute;
   border-radius: 0;
-  opacity: 0.95;
-  transform-style: preserve-3d;
-}
-
-.blob::before {
-  content: "";
-  position: absolute;
-  inset: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  opacity: 0.95;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Cpath d='M50 10 L18 76 L82 76 Z' stroke='%23071426' stroke-width='3.5' stroke-linejoin='round'/%3E%3Cpath d='M50 10 L50 52' stroke='%23071426' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M18 76 L50 52 L82 76' stroke='%23071426' stroke-width='3.5' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E");
-  transform-origin: center center;
-  animation: tetraWobble 18s ease-in-out infinite;
 }
 
-@keyframes tetraWobble {
-  0%   { transform: rotateZ(0deg) rotateX(18deg) rotateY(-12deg) scale(1); }
-  20%  { transform: rotateZ(40deg) rotateX(-10deg) rotateY(20deg) scale(1.03); }
-  40%  { transform: rotateZ(95deg) rotateX(14deg) rotateY(-18deg) scale(0.98); }
-  60%  { transform: rotateZ(180deg) rotateX(-16deg) rotateY(10deg) scale(1.02); }
-  80%  { transform: rotateZ(260deg) rotateX(10deg) rotateY(-22deg) scale(0.99); }
-  100% { transform: rotateZ(360deg) rotateX(18deg) rotateY(-12deg) scale(1); }
-}
-
-.blob-1::before  { animation-duration: 14s; }
-.blob-2::before  { animation-duration: 22s; animation-direction: reverse; }
-.blob-3::before  { animation-duration: 17s; }
-.blob-4::before  { animation-duration: 26s; animation-direction: reverse; }
-.blob-5::before  { animation-duration: 19s; }
-.blob-6::before  { animation-duration: 30s; animation-direction: reverse; }
-.blob-7::before  { animation-duration: 16s; }
-.blob-8::before  { animation-duration: 24s; animation-direction: reverse; }
-.blob-9::before  { animation-duration: 20s; }
-.blob-10::before { animation-duration: 28s; animation-direction: reverse; }
-.blob-11::before { animation-duration: 18s; }
-.blob-12::before { animation-duration: 32s; animation-direction: reverse; }
-.blob-13::before { animation-duration: 21s; }
-.blob-14::before { animation-duration: 27s; animation-direction: reverse; }
-.blob-15::before { animation-duration: 23s; }
+/* Individual floating tetrahedra */
+.blob-1  { width: 120px; height: 120px; top: 10%; left: 10%; animation: float1 25s infinite alternate ease-in-out; }
+.blob-2  { width: 150px; height: 150px; top: 60%; left: 80%; animation: float2 30s infinite alternate ease-in-out; }
+.blob-3  { width: 220px; height: 220px; top: 40%; left: 40%; animation: float3 35s infinite alternate ease-in-out; }
+.blob-4  { width: 180px; height: 180px; top: 80%; left: 20%; animation: float4 28s infinite alternate ease-in-out; }
+.blob-5  { width: 100px; height: 100px; top: 20%; left: 70%; animation: float5 22s infinite alternate ease-in-out; }
+.blob-6  { width: 250px; height: 250px; top: -10%; left: 50%; animation: float6 38s infinite alternate ease-in-out; }
+.blob-7  { width: 130px; height: 130px; top: 30%; left: 10%; animation: float2 27s infinite alternate ease-in-out 4s; }
+.blob-8  { width: 160px; height: 160px; top: 70%; left: 50%; animation: float5 33s infinite alternate ease-in-out 2s; }
+.blob-9  { width: 200px; height: 200px; top: 15%; left: 85%; animation: float1 40s infinite alternate ease-in-out 6s; }
+.blob-10 { width: 110px; height: 110px; top: 50%; left: 20%; animation: float4 26s infinite alternate ease-in-out 1s; }
+.blob-11 { width: 240px; height: 240px; top: 85%; left: 70%; animation: float3 45s infinite alternate ease-in-out 8s; }
+.blob-12 { width: 170px; height: 170px; top: 5%;  left: 40%; animation: float6 32s infinite alternate ease-in-out 5s; }
+.blob-13 { width: 140px; height: 140px; top: 65%; left: 10%; animation: float1 29s infinite alternate ease-in-out 3s; }
+.blob-14 { width: 190px; height: 190px; top: 35%; left: 80%; animation: float2 36s infinite alternate ease-in-out 7s; }
+.blob-15 { width: 210px; height: 210px; top: 90%; left: 40%; animation: float5 42s infinite alternate ease-in-out 4s; }
 
 /* Fluid Keyframes mapping sprawling movement coordinates */
 @keyframes float1 {
-  0%   { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(30vw, 20vh) scale(1.2); }
-  100% { transform: translate(-10vw, 40vh) scale(0.9); }
+  0%   { transform: translate(0, 0) scale(1) rotate(0deg); }
+  50%  { transform: translate(30vw, 20vh) scale(1.2) rotate(140deg); }
+  100% { transform: translate(-10vw, 40vh) scale(0.9) rotate(280deg); }
 }
+
 @keyframes float2 {
-  0%   { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(-40vw, -30vh) scale(1.1); }
-  100% { transform: translate(10vw, -50vh) scale(1); }
+  0%   { transform: translate(0, 0) scale(1) rotate(0deg); }
+  50%  { transform: translate(-40vw, -30vh) scale(1.1) rotate(-120deg); }
+  100% { transform: translate(10vw, -50vh) scale(1) rotate(-260deg); }
 }
+
 @keyframes float3 {
-  0%   { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(20vw, -20vh) scale(0.85); }
-  100% { transform: translate(-30vw, 10vh) scale(1.15); }
+  0%   { transform: translate(0, 0) scale(1) rotate(0deg); }
+  50%  { transform: translate(20vw, -20vh) scale(0.85) rotate(110deg); }
+  100% { transform: translate(-30vw, 10vh) scale(1.15) rotate(240deg); }
 }
+
 @keyframes float4 {
-  0%   { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(-20vw, -40vh) scale(1.2); }
-  100% { transform: translate(40vw, 10vh) scale(0.9); }
+  0%   { transform: translate(0, 0) scale(1) rotate(0deg); }
+  50%  { transform: translate(-20vw, -40vh) scale(1.2) rotate(-150deg); }
+  100% { transform: translate(40vw, 10vh) scale(0.9) rotate(-300deg); }
 }
+
 @keyframes float5 {
-  0%   { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(10vw, 30vh) scale(0.9); }
-  100% { transform: translate(-20vw, 0) scale(1.25); }
+  0%   { transform: translate(0, 0) scale(1) rotate(0deg); }
+  50%  { transform: translate(10vw, 30vh) scale(0.9) rotate(130deg); }
+  100% { transform: translate(-20vw, 0) scale(1.25) rotate(270deg); }
 }
+
 @keyframes float6 {
-  0%   { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(-10vw, 50vh) scale(1.1); }
-  100% { transform: translate(30vw, 20vh) scale(0.8); }
+  0%   { transform: translate(0, 0) scale(1) rotate(0deg); }
+  50%  { transform: translate(-10vw, 50vh) scale(1.1) rotate(-100deg); }
+  100% { transform: translate(30vw, 20vh) scale(0.8) rotate(-220deg); }
 }
 /* Consistent Date Label styling */
 .record-date {
