@@ -268,16 +268,14 @@ html, body {
   letter-spacing: 0.5px;
 }
 
-.author__avatar img {
-  border-radius: 50% !important;
-  border: none !important;
-  -webkit-mask-image: radial-gradient(circle at center, black 65%, transparent 100%);
-  mask-image: radial-gradient(circle at center, black 65%, transparent 100%);
-  transition: none;
-}
-
-.author__avatar img:hover {
-  transform: none;
+.author__avatar img,
+.author__avatar img:hover,
+.author__avatar:hover img,
+.author__avatar a:hover img {
+  opacity: 1 !important;
+  filter: none !important;
+  transform: none !important;
+  transition: none !important;
 }
 
 .author__avatar img {
