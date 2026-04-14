@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Ryan Febryanto"
-  avatar           : "/assets/images/author_image.JPG" # path of author image, e.g. "/assets/images/avatar.jpg"
+  avatar           : "/assets/images/IMG_1290.JPG" # path of author image, e.g. "/assets/images/avatar.jpg"
   bio              : "Molecular Engineering PhD candidate"
   location         : "Chicago, IL"
   email            : rfebryanto@uchicago.edu
