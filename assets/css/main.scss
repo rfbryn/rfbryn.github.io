@@ -194,12 +194,14 @@ html, body {
   height: 100%;
   filter: none;
   transition: transform 0.1s ease-out;
+  perspective: 800px;
 }
 
 .blob {
   position: absolute;
   border-radius: 0;
   opacity: 0.95;
+  transform-style: preserve-3d;
 }
 
 .blob::before {
@@ -210,31 +212,34 @@ html, body {
   background-position: center;
   background-size: contain;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Cpath d='M50 10 L18 76 L82 76 Z' stroke='%23071426' stroke-width='3.5' stroke-linejoin='round'/%3E%3Cpath d='M50 10 L50 52' stroke='%23071426' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M18 76 L50 52 L82 76' stroke='%23071426' stroke-width='3.5' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E");
-  animation: spinTetra 18s linear infinite;
   transform-origin: center center;
+  animation: tetraWobble 18s ease-in-out infinite;
 }
 
-@keyframes spinTetra {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+@keyframes tetraWobble {
+  0%   { transform: rotateZ(0deg) rotateX(18deg) rotateY(-12deg) scale(1); }
+  20%  { transform: rotateZ(40deg) rotateX(-10deg) rotateY(20deg) scale(1.03); }
+  40%  { transform: rotateZ(95deg) rotateX(14deg) rotateY(-18deg) scale(0.98); }
+  60%  { transform: rotateZ(180deg) rotateX(-16deg) rotateY(10deg) scale(1.02); }
+  80%  { transform: rotateZ(260deg) rotateX(10deg) rotateY(-22deg) scale(0.99); }
+  100% { transform: rotateZ(360deg) rotateX(18deg) rotateY(-12deg) scale(1); }
 }
 
-/* Ambient Small Condensates Configuration */
-.blob-1::before  { animation-duration: 14s; animation-direction: normal; }
+.blob-1::before  { animation-duration: 14s; }
 .blob-2::before  { animation-duration: 22s; animation-direction: reverse; }
-.blob-3::before  { animation-duration: 17s; animation-direction: normal; }
+.blob-3::before  { animation-duration: 17s; }
 .blob-4::before  { animation-duration: 26s; animation-direction: reverse; }
-.blob-5::before  { animation-duration: 19s; animation-direction: normal; }
+.blob-5::before  { animation-duration: 19s; }
 .blob-6::before  { animation-duration: 30s; animation-direction: reverse; }
-.blob-7::before  { animation-duration: 16s; animation-direction: normal; }
+.blob-7::before  { animation-duration: 16s; }
 .blob-8::before  { animation-duration: 24s; animation-direction: reverse; }
-.blob-9::before  { animation-duration: 20s; animation-direction: normal; }
+.blob-9::before  { animation-duration: 20s; }
 .blob-10::before { animation-duration: 28s; animation-direction: reverse; }
-.blob-11::before { animation-duration: 18s; animation-direction: normal; }
+.blob-11::before { animation-duration: 18s; }
 .blob-12::before { animation-duration: 32s; animation-direction: reverse; }
-.blob-13::before { animation-duration: 21s; animation-direction: normal; }
+.blob-13::before { animation-duration: 21s; }
 .blob-14::before { animation-duration: 27s; animation-direction: reverse; }
-.blob-15::before { animation-duration: 23s; animation-direction: normal; }
+.blob-15::before { animation-duration: 23s; }
 
 /* Fluid Keyframes mapping sprawling movement coordinates */
 @keyframes float1 {
