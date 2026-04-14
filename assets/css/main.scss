@@ -159,12 +159,6 @@ a {
   background: linear-gradient(135deg, #ffffff, #f9f9f9);
 }
 
-/* Smooth Image Loading */
-img {
-  border-radius: 8px;
-  transition: opacity 0.5s ease-in-out;
-}
-
 html, body {
   /* Make sure the solid marble canvas doesn't obscure negative z-index elements */
   background: transparent !important;
