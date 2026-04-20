@@ -11,6 +11,7 @@ Hi! I'm Ryan, a second-year PhD candidate Molecular Engineering at the Universit
 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.5rem; margin-bottom: 2rem;">
   <a href="https://drive.google.com/file/d/185tEKPrR0cW8GW_pbhkem8-P5UqEmQFj/view?usp=sharing" class="btn btn--primary" target="_blank"><i class="fas fa-file-pdf"></i> CV (2026/04)</a>
   <a href="https://scholar.google.com/citations?user=gXFkWpEAAAAJ&hl=en" class="btn btn--primary" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+</div>
 
 ## Recent News
 <div style="overflow-y: scroll; height: 400px; border: 0px; padding: 5px;">
